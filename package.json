@@ -1,0 +1,24 @@
+{
+  "name": "pkg265_project_atm-machine",
+  "version": "5.0.1",
+  "description": "A simple ATM machine simulation program.",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "pkg265_project02_atm": "index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/inquirer": "^9.0.7",
+    "@types/node": "^20.11.30"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "inquirer": "^9.2.16"
+  }
+}
