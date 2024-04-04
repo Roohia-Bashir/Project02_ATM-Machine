@@ -65,9 +65,10 @@ async function atm_func() {
                         message: "Enter the amount to withdraw:",
                     },
                 ]);
-                if (Withdraw_ans.amount < current_balance && Withdraw_ans.amount > 0) {
+                if (Withdraw_ans.amount <= current_balance && Withdraw_ans.amount > 0) {
+                    current_balance -= Withdraw_ans.amount;
                     console.log(`\nWithdrawn $${Withdraw_ans.amount} from your account.`);
-                    console.log(chalk.hex("#FFA500")(`\n💲 Your Current Balance is: $${current_balance - Withdraw_ans.amount}\n`));
+                    console.log(chalk.hex("#FFA500")(`\n💲 Your Current Balance is: $${current_balance}\n`));
                 }
                 else {
                     console.log(chalk.red.bold(`\n\t⚠️ Insufficient balance or Invalid Amount.`));
